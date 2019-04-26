@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="string">
+<input type="text" id="index">
+<button type="button" onclick="uppercase();">click</button>
+<script type="text/javascript">
+	function uppercase(){
+	var string = document.getElementById('string').value;
+	var index = document.getElementById('index').value;
+	var result = string.charAt(index).toUpperCase(index) == string.charAt(index);
+	return result;
+}
+alert(uppercase());
+</script>
+</body>
+</html>

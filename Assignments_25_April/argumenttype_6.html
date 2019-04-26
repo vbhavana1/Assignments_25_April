@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+	<div>
+		<input type="text" id="enetr" placeholder="enter string">
+		<button  onclick="argtype();">Display argument type</button>
+		<label id="previous"></label>
+	</div>
+<script type="text/javascript">
+	function argtype()
+	{
+		 var arg = document.getElementById('enetr').value;
+		 document.getElementById('previous').innerHTML = "argument type is:" +typeof arg;
+		 
+
+	}
+</script>
+</body>
+</html>

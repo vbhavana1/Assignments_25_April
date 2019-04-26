@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="myinput" type="text" >
+	<input id="mynew" type="text">
+	<button onclick="wordnum();"> click on</button>
+	<script type="text/javascript">
+		function wordnum()
+		{
+			var arr = document.getElementById('myinput').value;
+			var sub = document.getElementById('mynew').value;
+			var newarr = arr.split(' ');
+			var count=0;
+			for (var i = 0; i < newarr.length; i++) 
+			{
+								if(sub == newarr[i])
+								{
+									count++;
+								}
+			}	
+			console.log(count);		
+				
+		}
+	</script>
+
+</body>
+</html>

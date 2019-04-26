@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<label> Enter value:</label>
+<input type="text"  id="number">
+<input type="submit" onclick="guess();">
+<h1 id="displayResult" style = "color : red;" ></h1>
+<script type="text/javascript">
+	function guess()
+	{
+		var usernm = document.getElementById('number').value;
+		console.log(number);
+		var generatedNum = Math.floor(Math.random() * 11);
+		if(usernm == generatedNum)
+		{
+			document.getElementById('displayResult').innerHTML = "Right on !";
+		}
+		document.getElementById('displayResult').innerHTML = "Unlucky";
+	}
+</script>
+
+</body>
+</html>

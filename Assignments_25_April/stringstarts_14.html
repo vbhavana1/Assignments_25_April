@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="string1" type="text">
+	<input id="string2" type="text">
+	<button type="button" onclick="stringstart();"> click</button>
+<script type="text/javascript">
+	function stringstart()
+	{
+		var string1 = document.getElementById('string1').value;
+		var string2 = document.getElementById('string2').value;
+		var splitstring = string1.split(" ");
+		if(splitstring[0] == string2)
+	{
+		alert("string matched");
+	}
+		alert("not matched");
+	}
+</script>
+</body>
+</html>
