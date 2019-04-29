@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	 $(document).ready(function(){
+		$("button").click(function(){
+			$("#mydiv select").empty().append('<option selected="selected" value="test">Hyderabad</option>','<option selected="selected" value="test">Mysore</option>');
+		});
+
+	});
+</script>
+<div id="mydiv">
+	<select>
+		<option>Banglore</option>
+		<option>Chennai</option>
+		<option>Delhi</option>
+	</select>
+	</div><br>
+	<button>click Me</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> append paragraph</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		$(function(){
+
+			$("button").click(function(){
+				$("#paraSampleTest").append('This is the paragraph after append<br>');
+			});
+		});
+		
+	</script>
+	<p id="paraSampleTest" >This is the text in paragraph</p>
+	<button>click here</button>
+
+</body>
+</html>

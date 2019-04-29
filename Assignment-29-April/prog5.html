@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		.mydiv{
+			background-color: blue;
+			font-size: 40px;
+			font-style: italic;
+		}
+		.mydiv h1{
+			background-color: red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$(".mydiv").removeClass('mydiv');
+			});
+			
+		});
+		
+	</script>
+	<div class="mydiv">
+		<h1> This is heading</h1>
+		<p> This is paragraph</p>
+	</div>
+	<button>Click Me</button>
+
+</body>
+</html>

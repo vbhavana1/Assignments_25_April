@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("div").each(function(){
+				var x = $(this).html();
+				var word = $(this).html().split(' ')[1];
+				$(this).html($(this).html().replace(word,'<b> '+word+' </b>'));
+			});
+
+		});
+
+
+	});
+
+
+	
+</script>
+<div >
+	<p> This is first division</p>
+	</div>
+	<div>
+	<p>	second division</p>
+	</div>
+	<div>
+		<p>Third division</p>
+	</div>
+	<button>click here</button>
+</body>
+</html>
