@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a id="anchor1" href="wwww.abc1.com"> Link 1</a><br>
+<a id="anchor2" href="wwww.abc2.com"> Link 2</a><br>
+<a id="anchor3" href="wwww.abc3.com"> Link 3</a><br>
+<a id="anchor4" href="wwww.abc4.com"> Link 4</a><br>
+<button onclick="displaylink();">click to display last link</button>
+<p id="displayresult"></p>
+<script type="text/javascript">
+
+	function displaylink()
+	{
+		
+		var links = document.getElementsByTagName('a');
+			for (var i = 0; i < links.length; i++) 
+			{
+				console.log(links[i].href);
+			}
+		document.getElementById('displayresult').innerHTML =  links[links.length - 1].href;
+
+	}
+</script>
+
+</body>
+</html>

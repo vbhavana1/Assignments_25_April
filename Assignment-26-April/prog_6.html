@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center><button type="button" onclick="createtextbox();"> click to create text box</button></center>
+	<div id="container">
+		
+	</div>
+	<script type="text/javascript">
+		function createtextbox()
+		{
+			//var mytextBox = document.createElement('input');
+			//mytextBox.type = "text";
+			//document.getElementById('container');
+			//mytextBox.innerHTML = document.getElementById('input');
+			//document.getElementById('container').appendChild(mytextBox);
+			console.log("print");
+			var element = document.createElement('input');
+			var label = document.createElement('Label');
+			label.innerHTML = "new label";
+			element.setAttribute("type", "text");
+			var foo = document.getElementById("container");
+			foo.appendChild(label);
+			foo.appendChild(element);
+
+		}
+		
+	</script>
+
+</body>
+</html>

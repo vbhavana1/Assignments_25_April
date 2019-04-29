@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="container">
+	</div>
+	<input type="text" id="myinput">
+	<button  type="button" onclick="newparagraph();"> click </button>
+<script type="text/javascript">
+	function newparagraph()
+	{
+	 var myNewPara = document.createElement('P');
+	 myNewPara.id = "containerPara";
+	myNewPara.innerHTML = document.getElementById('myinput').value;
+	document.getElementById('container').appendChild(myNewPara);
+}
+</script>
+</body>
+</html>

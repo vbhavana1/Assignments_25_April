@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="container">
+		<form>
+			<select id="myoption">
+				<option>Apple</option>
+				<option>Banana</option>
+				<option>Mango</option>
+				<option>JackFruit</option>
+				<option>Grape</option>
+				<option>orange</option>
+			</select>
+			<input type="button" onclick="removeoption();" value ="Remove Option">
+		</form>
+	</div>
+<script type="text/javascript">
+	function removeoption()
+	{
+		
+		var a = document.getElementById('myoption');
+		a.remove(a.selectedIndex);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button type="button" onclick="createDropdown();"> click to create drop down</button>
+	<div id="container" style="margin-top: 20px;">
+		<form>
+		<select id="test">
+			<option>Banglore</option>
+			<option>hyderabad</option>
+			<option> Delhi</option>
+			<option>pune</option>
+		</select>
+	</form>
+	</div>
+	<script type="text/javascript">
+		function createDropdown()
+		{
+			document.getElementById('test').disabled = true;
+
+		}
+	</script>
+
+</body>
+</html>
