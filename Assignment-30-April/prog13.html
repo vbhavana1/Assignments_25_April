@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Alert  the option in combo box</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	
+			$(document).ready(function(){
+    $("select.ways").change(function(){
+        var selectedCountry = $(this).children("option:selected").val();
+        alert("You have selected the country - " + selectedCountry);
+    });
+});
+	
+
+</script>
+<select class="ways">
+	<option>Railways</option>
+	<option>Roadways</option>
+	<option>waterways</option>
+	<option>Airways</option>
+</select>
+</body>
+</html>

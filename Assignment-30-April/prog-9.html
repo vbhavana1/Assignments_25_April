@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get the table value</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+	<table border = 1px>
+		<tr><th id="th1">Integers</th><th>charecter</th></tr>
+		<tr><td id="td1">01</td><td>bhavana</td></tr>
+		<tr><td id="th1">02</td><td> Vyshnavi</td></tr>
+	</table>
+	</div>
+	<button >Click to get value</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("button").click(function(){
+			alert($(" table  #td1").text());
+		});
+		});
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Remove row in table</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').click(function(){
+			$("table tr:last").remove();
+		});
+	});
+</script>
+<div>
+	<table border="1px">
+		<tr><th>Names</th><th>profession</th>
+			<tr>	<td>ram</td><td>doctor</td></tr>
+			<tr><td>sam</td><td>Painter</td></tr>
+			<tr><td>mouni</td><td>Mentor</td></tr>
+			<tr><td>honney</td><td>Teacher</td></tr>
+
+	</table>
+	<button>Remove row</button>
+</div>
+</body>
+</html>

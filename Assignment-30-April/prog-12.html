@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> convert to title case</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#myinput").mouseout(function() {
+				//console.log("hhh");
+				var value = $(" #myinput").val().split(" ");
+				
+				//console.log(splitvalue);
+				//console.log(splitvalue[0]);
+				
+				for( var i=0; i<value.length; i++)
+				{
+
+
+				$("#myinput").val($("#myinput").val().replace(value[i],value[i].charAt(0).toUpperCase() + value[i].substr(1)));
+				console.log(value[i].charAt(0).toUpperCase() + value[i].substr(1));
+				 // var newvalue = $(word.charAt(0).toUppercase() + word.substr(1).toLowercase());
+				 // console.log(newvalue);
+				}
+
+			});
+		});
+	</script>
+<div>
+	<input id="myinput" type="text">
+</div>
+</body>
+</html>

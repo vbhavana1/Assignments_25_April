@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap style</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<input id="myinput" type="text">
+<div id="division" >
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#myinput").keyup(function(){
+			var para = document.createElement('p');
+			para.id = "alertWarning";
+			para.innerHTML = "<strong>Warning!</strong>Enter data in this field is prohibited";
+			document.getElementById('division').appendChild(para);
+			document.getElementById("alertWarning").className = "alert alert-warning";
+		});
+		
+	});
+
+	
+</script>
+
+</body>
+</html>
