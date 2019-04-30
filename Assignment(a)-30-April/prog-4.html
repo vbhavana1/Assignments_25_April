@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#mydiv").delay(2000).fadeIn();
+				$("#mydiv1").delay(1000).slideUp();
+				$("#mydiv2").delay(1500).slideUp();
+				});
+			});
+
+		
+	</script>
+	<div id="mydiv" style="background: #9F81F7; width: 100px; height: 100px;display: none"></div><br>
+	<div id="mydiv1" style="background: blue; width: 100px; height: 100px;"></div><br>
+		<div id="mydiv2" style="background: #61210B; width: 100px; height: 100px;"></div><br>
+			
+	
+	<button>click</button>
+</body>
+</html>

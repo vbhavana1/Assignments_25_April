@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count option in combo box</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function() {
+			alert($("#myselect option").length)
+		});
+	});
+	
+</script>
+<div>
+	<select id="myselect">
+		<option>Learn</option>
+		<option>Read</option>
+		<option>Write</option>
+		<option>Speak</option>
+	</select>
+	<button>count options</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Make the div Box larger</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		#mydiv{
+			width: 80px;
+			height: 100px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#mydiv").click(function(){
+			$("#mydiv").animate({width: " 200px", height: "200px"}, "slow");
+		});
+
+	});
+	
+</script>
+<div id="mydiv">
+	
+</div>
+</body>
+</html>
