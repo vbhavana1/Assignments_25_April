@@ -17,7 +17,7 @@ class CopyDataThread extends Thread{
 				for ( int i = 1 ; i< 10; i++){
 					fw.write(ch);
 				Thread.sleep(2000);
-				System.out.println(" Keep delay of 5 seconds");
+		
 			}
 		
 				fw.flush();
